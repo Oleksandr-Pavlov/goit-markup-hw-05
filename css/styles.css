@@ -12,6 +12,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--title-color);
   background-color: var(--primary-bcg-color);
+
+  padding-top: 81px;
 }
 
 h1,
@@ -87,9 +89,20 @@ img {
 /* -----------------HEADER----------------- */
 
 .header {
+  position: fixed;
+  z-index: 999;
+  background-color: var(--primary-bcg-color);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+}
+
+.header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
